@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+"use strict"
+
 import React from "react";
+import Pokedex from "./Pokedex";
 
 function App() {
   return (
-    
+    <Pokedex />
   );
 }
 
