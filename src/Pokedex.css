@@ -1,0 +1,8 @@
+.Pokedex {
+  text-align: center;
+}
+
+.Pokedex-container {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,4 +1,4 @@
-"use strict"
+import "./Pokecard.css"
 
 /** Pokecard Component: shows a single pokemon with:
  * 
@@ -22,7 +22,7 @@ function Pokecard(props) {
         alt={name}
       ></img>
       <div className="Pokecard-info">{type}</div>
-      <div className="Pokecard-info">{base_experience}</div>
+      <div className="Pokecard-info">EXP:{base_experience}</div>
     </div>
   );
 }

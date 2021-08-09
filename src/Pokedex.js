@@ -1,6 +1,5 @@
-"use strict";
-
 import Pokecard from "./Pokecard";
+import "./Pokedex.css"
 
 /** Pokedex Component: takes in props and returns a sequence of Pokecard components.
  *
@@ -15,7 +14,7 @@ function Pokedex(props) {
   return (
     <div className="Pokedex">
       <h3 className="Pokedex-title">Pokedex</h3>
-      <div>
+      <div className="Pokedex-container">
         {pokemon.map((p) => (
           <div className="Pokedex-card">
             <Pokecard
