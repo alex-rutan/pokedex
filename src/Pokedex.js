@@ -9,11 +9,13 @@ import "./Pokedex.css"
  *      ] 
  * */
 function Pokedex(props) {
-  const { pokemon } = props;
+  const { pokemon, expTotal, isWinner } = props;
 
+  const winnerMsg = isWinner ? "This Hand WINS!!" : "This Hand LOSES!!"
   return (
     <div className="Pokedex">
       <h3 className="Pokedex-title">Pokedex</h3>
+      <h4 className="Pokedex-exp">Total EXP: {expTotal}</h4>
       <div className="Pokedex-container">
         {pokemon.map((p) => (
           <div className="Pokedex-card">
@@ -26,6 +28,7 @@ function Pokedex(props) {
           </div>
         ))}
       </div>
+    <h3>{winnerMsg}</h3>
     </div>
   );
 }
